@@ -1,0 +1,8 @@
+This is a placeholder for the University of Utah logo. 
+
+For your GitHub Pages site, you will need to:
+1. Create or obtain a white "U" logo on a red background
+2. Save it as "utah-logo.png" in this directory
+3. Make sure it's approximately square (e.g., 60x60 pixels)
+
+The CSS is set up to display this logo in the top-left corner of the sidebar.

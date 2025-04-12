@@ -1,0 +1,110 @@
+/* Simple styles for the course website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header/title area */
+.course-title {
+    background-color: #515151;
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+}
+
+/* Navigation styles */
+.nav {
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #a20000;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content styles */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.module-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Section headers */
+.objectives-header {
+    background-color: #f1c151;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.activities-header {
+    background-color: #bdbdbd;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tips-section {
+    background-color: #e8f4f8;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #3498db;
+}
+
+/* Footer */
+.copyright {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #666;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Banner image */
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}

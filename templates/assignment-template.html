@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ASSIGNMENT_TITLE] - AI in Law Course</title>
+    <link rel="stylesheet" href="../../../css/canvas-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Additional styles for assignment pages */
+        .assignment-container {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .assignment-details {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .assignment-details p {
+            margin: 5px 0;
+        }
+        
+        .instructions {
+            margin-bottom: 20px;
+        }
+        
+        .submission-section {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        .file-upload {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+        
+        .file-upload-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        
+        .file-upload-btn:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .submit-button {
+            background-color: #a20000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .submit-button:hover {
+            background-color: #870000;
+        }
+        
+        .example-section {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .rubric {
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .rubric-header {
+            background-color: #f5f5f5;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        .rubric-item {
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .rubric-item:last-child {
+            border-bottom: none;
+        }
+        
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .navigation-buttons a {
+            padding: 8px 15px;
+            background-color: #a20000;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../../../images/utah-logo.png" alt="U Logo">
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-user"></i><br>
+                Account
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-tachometer-alt"></i><br>
+                Dashboard
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="../../../canvas-index.html">
+                <i class="fas fa-book"></i><br>
+                Courses
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-calendar"></i><br>
+                Calendar
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-inbox"></i><br>
+                Inbox
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-clock"></i><br>
+                History
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-question-circle"></i><br>
+                Help
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="breadcrumbs">
+                <a href="../../../canvas-index.html">AI in Law</a> <span>›</span> 
+                <a href="../canvas-welcome.html">Module [MODULE_NUMBER]</a> <span>›</span> 
+                [ASSIGNMENT_TITLE]
+            </div>
+        </div>
+
+        <!-- Main Content Container -->
+        <div style="display: flex;">
+            <!-- Left Navigation -->
+            <div class="left-nav">
+                <ul>
+                    <li><a href="../../../canvas-index.html">Home</a></li>
+                    <li><a href="../canvas-welcome.html">Module Overview</a></li>
+                    <li><a href="../learning/[LEARNING_FILENAME].html">Learning Activities</a></li>
+                    <li><a href="../practice/[QUIZ_FILENAME].html">Quizzes</a></li>
+                    <li><a href="../discussions/[DISCUSSION_FILENAME].html">Discussions</a></li>
+                    <li><a href="#" class="active">Assignments</a></li>
+                    <li><a href="#">Grades</a></li>
+                </ul>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-container">
+                <h1 class="page-title">[ASSIGNMENT_TITLE]</h1>
+                
+                <div class="content-body">
+                    <div class="assignment-container">
+                        <div class="assignment-details">
+                            <p><strong>Due Date:</strong> [DUE_DATE]</p>
+                            <p><strong>Points:</strong> [POINTS]</p>
+                            <p><strong>Submission Type:</strong> [SUBMISSION_TYPE]</p>
+                        </div>
+                        
+                        <div class="instructions">
+                            <h3>Assignment Instructions</h3>
+                            <p>[ASSIGNMENT_DESCRIPTION]</p>
+                            
+                            <h4>Objectives</h4>
+                            <ul>
+                                <li>[OBJECTIVE_1]</li>
+                                <li>[OBJECTIVE_2]</li>
+                                <li>[OBJECTIVE_3]</li>
+                            </ul>
+                            
+                            <h4>Requirements</h4>
+                            <ol>
+                                <li>[REQUIREMENT_1]</li>
+                                <li>[REQUIREMENT_2]</li>
+                                <li>[REQUIREMENT_3]</li>
+                                <li>[REQUIREMENT_4]</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="example-section">
+                            <h4>Example</h4>
+                            <p>[EXAMPLE_TEXT]</p>
+                        </div>
+                        
+                        <div class="submission-section">
+                            <h3>Submission</h3>
+                            <p>[SUBMISSION_INSTRUCTIONS]</p>
+                            
+                            <div class="file-upload">
+                                <label class="file-upload-btn">
+                                    <i class="fas fa-cloud-upload-alt"></i> Choose File
+                                    <input type="file" style="display: none;">
+                                </label>
+                                <span>No file chosen</span>
+                            </div>
+                            
+                            <textarea rows="5" placeholder="Comments..." style="width: 100%; margin-top: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                            
+                            <button class="submit-button">Submit Assignment</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rubric">
+                        <div class="rubric-header">Grading Rubric</div>
+                        <div class="rubric-item">
+                            <strong>Understanding (30%)</strong>: Demonstrates clear understanding of concepts.
+                        </div>
+                        <div class="rubric-item">
+                            <strong>Application (30%)</strong>: Effectively applies concepts to the assignment.
+                        </div>
+                        <div class="rubric-item">
+                            <strong>Analysis (20%)</strong>: Provides thoughtful analysis and reasoning.
+                        </div>
+                        <div class="rubric-item">
+                            <strong>Presentation (10%)</strong>: Well-organized and professionally presented.
+                        </div>
+                        <div class="rubric-item">
+                            <strong>Completeness (10%)</strong>: All required elements are included.
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="[PREV_PAGE_URL]"><i class="fas fa-arrow-left"></i> Previous</a>
+                        <a href="[NEXT_PAGE_URL]">Next <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

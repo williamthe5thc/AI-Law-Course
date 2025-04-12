@@ -1,0 +1,8 @@
+This is a placeholder for the Module 9 welcome banner.
+
+For your GitHub Pages site, you will need to:
+1. Obtain the banner image shown in your Canvas course (the colorful "WELCOME! to module 9" banner)
+2. Save it as "module9-banner.jpg" in this directory
+3. The CSS is set up to display this at the top of the module page
+
+This banner appears to have a teal background with pink text and circular design elements.

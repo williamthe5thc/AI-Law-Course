@@ -1,0 +1,179 @@
+/* Canvas-style layout for the course website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 84px;
+    background-color: #333;
+    color: white;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.sidebar-logo {
+    background-color: #a20000;
+    padding: 12px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-item {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+    font-size: 12px;
+}
+
+.sidebar-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Main content area */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top navigation */
+.top-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 0 16px;
+    height: 60px;
+}
+
+.menu-icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #666;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs a {
+    color: #a20000;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumbs span {
+    margin: 0 5px;
+    color: #666;
+}
+
+/* Left navigation panel */
+.left-nav {
+    width: 180px;
+    border-right: 1px solid #ddd;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+.left-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-nav li {
+    margin-bottom: 15px;
+}
+
+.left-nav a {
+    display: block;
+    padding: 5px 15px;
+    color: #a20000;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.left-nav a:hover, .left-nav a.active {
+    background-color: #f5f5f5;
+}
+
+/* Content area */
+.content-container {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.page-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.content-body {
+    max-width: 960px;
+}
+
+/* Module sections */
+.module-banner {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.module-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.objectives-section {
+    background-color: #f1c151;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.objectives-section h2 {
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+}
+
+.activities-section {
+    background-color: #bdbdbd;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.activities-section h2 {
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+}
+
+.tips-section {
+    background-color: #e8f4f8;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #3498db;
+}

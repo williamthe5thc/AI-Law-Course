@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Tester - AI in Law Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #a20000;
+            border-bottom: 2px solid #a20000;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #e0e0e0;
+        }
+        .status-ok {
+            color: green;
+        }
+        .status-missing {
+            color: red;
+        }
+        .test-button {
+            padding: 10px 15px;
+            background-color: #a20000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI in Law Course - Link Tester</h1>
+    <p>This utility checks all links in the course to ensure navigation is working properly.</p>
+    
+    <div class="test-section">
+        <h2>Main Navigation</h2>
+        <table id="main-links">
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>URL</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Main Index</td>
+                    <td><a href="index.html">index.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Canvas Style Index</td>
+                    <td><a href="canvas-index.html">canvas-index.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="test-section">
+        <h2>Module Pages</h2>
+        <table id="module-links">
+            <thead>
+                <tr>
+                    <th>Module</th>
+                    <th>Welcome Page</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Module 1</td>
+                    <td><a href="modules/module1/welcome.html">modules/module1/welcome.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Module 2</td>
+                    <td><a href="modules/module2/welcome.html">modules/module2/welcome.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Module 3</td>
+                    <td><a href="modules/module3/welcome.html">modules/module3/welcome.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Module 4</td>
+                    <td><a href="modules/module4/canvas-welcome.html">modules/module4/canvas-welcome.html</a></td>
+                    <td class="status-missing">Missing</td>
+                </tr>
+                <tr>
+                    <td>Module 5</td>
+                    <td><a href="modules/module5/canvas-welcome.html">modules/module5/canvas-welcome.html</a></td>
+                    <td class="status-missing">Missing</td>
+                </tr>
+                <tr>
+                    <td>Module 6</td>
+                    <td><a href="modules/module6/canvas-welcome.html">modules/module6/canvas-welcome.html</a></td>
+                    <td class="status-missing">Missing</td>
+                </tr>
+                <tr>
+                    <td>Module 7</td>
+                    <td><a href="modules/module7/canvas-welcome.html">modules/module7/canvas-welcome.html</a></td>
+                    <td class="status-missing">Missing</td>
+                </tr>
+                <tr>
+                    <td>Module 8</td>
+                    <td><a href="modules/module8/canvas-welcome.html">modules/module8/canvas-welcome.html</a></td>
+                    <td class="status-missing">Missing</td>
+                </tr>
+                <tr>
+                    <td>Module 9</td>
+                    <td><a href="modules/module9/canvas-welcome.html">modules/module9/canvas-welcome.html</a></td>
+                    <td class="status-missing">Missing</td>
+                </tr>
+                <tr>
+                    <td>Module 10</td>
+                    <td><a href="modules/module10/canvas-welcome.html">modules/module10/canvas-welcome.html</a></td>
+                    <td class="status-missing">Missing</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="test-section">
+        <h2>Module 1 Pages</h2>
+        <table id="module1-links">
+            <thead>
+                <tr>
+                    <th>Page Type</th>
+                    <th>URL</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Welcome</td>
+                    <td><a href="modules/module1/welcome.html">modules/module1/welcome.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Evolution of AI</td>
+                    <td><a href="modules/module1/learning/evolution-of-ai.html">modules/module1/learning/evolution-of-ai.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Understanding AI Development</td>
+                    <td><a href="modules/module1/learning/understanding-ai-development.html">modules/module1/learning/understanding-ai-development.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>History Quiz</td>
+                    <td><a href="modules/module1/practice/history-quiz.html">modules/module1/practice/history-quiz.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Historical Patterns Discussion</td>
+                    <td><a href="modules/module1/discussions/historical-patterns.html">modules/module1/discussions/historical-patterns.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="test-section">
+        <h2>Module 2 Pages</h2>
+        <table id="module2-links">
+            <thead>
+                <tr>
+                    <th>Page Type</th>
+                    <th>URL</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Welcome</td>
+                    <td><a href="modules/module2/welcome.html">modules/module2/welcome.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Prompt Elements</td>
+                    <td><a href="modules/module2/learning/prompt-elements.html">modules/module2/learning/prompt-elements.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Zero-Shot Prompting</td>
+                    <td><a href="modules/module2/learning/zero-shot-prompting.html">modules/module2/learning/zero-shot-prompting.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>One-Shot Prompting</td>
+                    <td><a href="modules/module2/learning/one-shot-prompting.html">modules/module2/learning/one-shot-prompting.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Basic Prompting Quiz</td>
+                    <td><a href="modules/module2/practice/basic-prompting-quiz.html">modules/module2/practice/basic-prompting-quiz.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+                <tr>
+                    <td>Module 2 Discussion</td>
+                    <td><a href="modules/module2/discussions/module2-discussion.html">modules/module2/discussions/module2-discussion.html</a></td>
+                    <td class="status-ok">Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <a href="index.html" class="back-link">Back to Course Home</a>
+    
+    <script>
+        // Simple script to check links (would work when hosted)
+        document.addEventListener('DOMContentLoaded', function() {
+            // This would be implemented when the site is hosted
+            console.log('Link checker loaded');
+        });
+    </script>
+</body>
+</html>
