@@ -23,6 +23,14 @@
         .module-card h3 {
             margin-top: 0;
             color: #2d3b45;
+            display: flex;
+            align-items: center;
+        }
+        
+        .module-card h3 .module-status {
+            margin-left: 10px;
+            font-size: 14px;
+            color: #0c812c;
         }
         
         .module-card .module-desc {
@@ -34,6 +42,107 @@
             color: #a20000;
             text-decoration: none;
             font-weight: bold;
+        }
+        
+        .activity-list {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .activity-type {
+            font-weight: bold;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            color: #333;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .activity-type .status-icon {
+            color: #0c812c;
+            margin-right: 10px;
+        }
+        
+        .activity-item {
+            margin-bottom: 8px;
+            padding-left: 24px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .activity-item:before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        
+        .activity-item.page-item:before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%232d3b45" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>');
+        }
+        
+        .activity-item.quiz-item:before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%232d3b45" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg>');
+        }
+        
+        .activity-item.discussion-item:before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%232d3b45" d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z"></path></svg>');
+        }
+        
+        .activity-item.assignment-item:before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%232d3b45" d="M319.4 320.6L224 416l-95.4-95.4C57.1 323.7 0 382.2 0 454.4v9.6c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-9.6c0-72.2-57.1-130.7-128.6-133.8zM13.6 79.8l6.4 1.5v58.4c-7 4.2-12 11.5-12 20.3 0 8.4 4.6 15.4 11.1 19.7L3.5 242c-1.7 6.9 2.1 14 7.6 14h41.8c5.5 0 9.3-7.1 7.6-14l-15.6-62.3C51.4 175.4 56 168.4 56 160c0-8.8-5-16.1-12-20.3V87.1l66 15.9c-8.6 17.2-14 36.4-14 57 0 70.7 57.3 128 128 128s128-57.3 128-128c0-20.6-5.3-39.8-14-57l96.3-23.2c18.2-4.4 18.2-27.1 0-31.5l-190.4-46c-13-3.1-26.7-3.1-39.7 0L13.6 48.2c-18.1 4.4-18.1 27.2 0 31.6z"></path></svg>');
+        }
+        
+        .activity-item .status-icon {
+            color: #0c812c;
+            margin-right: 8px;
+        }
+        
+        .activity-item .pts {
+            margin-left: 8px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .activity-item a {
+            color: #2d3b45;
+            text-decoration: none;
+            flex-grow: 1;
+        }
+        
+        .activity-item a:hover {
+            text-decoration: underline;
+            color: #a20000;
+        }
+        
+        .module-nav {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /* Accordian style for sections */
+        .section-toggle {
+            cursor: pointer;
+        }
+        
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .section-content.open {
+            max-height: 1000px;
         }
     </style>
 </head>
@@ -105,15 +214,15 @@
             <div class="left-nav">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Assignments</a></li>
-                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#discussions">Discussions</a></li>
                     <li><a href="#">Grades</a></li>
                     <li><a href="#">People</a></li>
                     <li><a href="#">Pages</a></li>
                     <li><a href="#">Files</a></li>
                     <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Modules</a></li>
+                    <li><a href="#quizzes">Quizzes</a></li>
+                    <li><a href="#modules">Modules</a></li>
                     <li><a href="#">Collaborations</a></li>
                     <li><a href="#">Chat</a></li>
                 </ul>
@@ -126,72 +235,548 @@
                 <div class="content-body">
                     <p>Welcome to the AI in Law Course. This course explores the intersection of artificial intelligence and law, covering essential concepts, applications, and ethical considerations in this rapidly evolving field.</p>
                     
-                    <div class="objectives-section">
+                    <div class="objectives-section" id="modules">
                         <h2>COURSE MODULES</h2>
                     </div>
                     
+                    <!-- Module 1 -->
                     <div class="module-card">
-                        <h3>Module 1: History of AI</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module1-content"></i>
+                            Module 1: History of AI
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Explore the development of AI from its early beginnings to current technologies.</p>
                         <a href="modules/module1/welcome.html" class="module-link">Go to Module 1</a>
+                        
+                        <div class="activity-list section-content" id="module1-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module1/learning/evolution-of-ai.html">Learning Activity 1: The Evolution of AI: A Historical Timeline</a>
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module1/learning/understanding-ai-development.html">Learning Activity 2: Understanding AI Development and Capabilities</a>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module1/practice/history-quiz.html">Low-Stakes History of AI Quiz</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                            
+                            <div class="activity-item discussion-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module1/discussions/historical-patterns.html">Module 1 Discussion: Historical Patterns in AI Development</a>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 2 -->
                     <div class="module-card">
-                        <h3>Module 2: Basic Prompting for Working Professionals</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module2-content"></i>
+                            Module 2: Basic Prompting for Working Professionals
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Learn fundamental prompting techniques for effective AI interactions.</p>
                         <a href="modules/module2/welcome.html" class="module-link">Go to Module 2</a>
+                        
+                        <div class="activity-list section-content" id="module2-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module2/learning/prompt-elements.html">Learning Activity 1: Prompt Elements & Basic Structure</a>
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module2/learning/zero-shot-prompting.html">Learning Activity 2: Zero-Shot Prompting</a>
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module2/learning/few-shot-prompting.html">Learning Activity 3: One-Shot and Few-Shot Prompting</a>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module2/practice/basic-prompting-quiz.html">Low-Stakes Basic Prompting Quiz</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                            
+                            <div class="activity-item discussion-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module2/discussions/module2-discussion.html">Module 2 Discussion</a>
+                                <span class="pts">50 pts</span>
+                            </div>
+                            
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module2/learning/ai-prompt-mastering.html">Learning Activity 4: AI-Prompt mastering activity</a>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 3 -->
                     <div class="module-card">
-                        <h3>Module 3: Chatbots in Legal Context</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module3-content"></i>
+                            Module 3: Chatbots in Legal Context
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Understand how chatbots are used in legal settings and their implications.</p>
-                        <a href="modules/module3/canvas-welcome.html" class="module-link">Go to Module 3</a>
+                        <a href="modules/module3/welcome.html" class="module-link">Go to Module 3</a>
+                        
+                        <div class="activity-list section-content" id="module3-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module3/learning/chatbot-fundamentals.html">Learning Activity 1: Understanding Chatbot Fundamentals in Legal Contexts</a>
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module3/learning/no-code-platforms.html">Learning Activity 2: Assessing no-code chatbot platforms for legal applications</a>
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module3/learning/legal-implications.html">Learning Activity 3: Analyzing legal and ethical implications of chatbot use</a>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module3/practice/chatbot-quiz.html">Low-stakes Chatbot Quiz</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Testing to Learn
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module3/assignments/week3-info.html">Week 3 assignment idea (Info page)</a>
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module3/assignments/week3-submission.html">Week 3 assignment Idea (submission page)</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 4 -->
                     <div class="module-card">
-                        <h3>Module 4: Media Creation for Working Professionals</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module4-content"></i>
+                            Module 4: Media Creation for Working Professionals
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Explore AI tools for creating professional media content.</p>
-                        <a href="modules/module4/canvas-welcome.html" class="module-link">Go to Module 4</a>
+                        <a href="modules/module4/welcome.html" class="module-link">Go to Module 4</a>
+                        
+                        <div class="activity-list section-content" id="module4-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module4/learning/tool-comparison.html">Assignment 1: Tool Comparison Matrix</a>
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module4/learning/prompt-engineering.html">Instructions for Assignment 2: Prompt Engineering & Media Creation</a>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module4/practice/media-portfolio.html">Assignment 3 - AI Media Portfolio</a>
+                            </div>
+                            
+                            <div class="activity-item discussion-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module4/discussions/module4-discussion.html">Module 4 Discussion</a>
+                                <span class="pts">25 pts</span>
+                            </div>
+                            
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module4/quizzes/media-creation-quiz.html">Low-Stakes Media Creation Quiz</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 5 -->
                     <div class="module-card">
-                        <h3>Module 5: AI Tools in Legal Settings</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module5-content"></i>
+                            Module 5: AI Tools in Legal Settings
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Examine specific AI applications designed for legal practice.</p>
-                        <a href="modules/module5/canvas-welcome.html" class="module-link">Go to Module 5</a>
+                        <a href="modules/module5/welcome.html" class="module-link">Go to Module 5</a>
+                        
+                        <div class="activity-list section-content" id="module5-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module5/learning/exploring-ai-tools.html">Learning Activity 1: Exploring AI Tools in Legal Settings</a>
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module5/assignments/legal-tools-comparison.html">Assignment 1: AI Legal Tools Comparison</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module5/assignments/legal-tasks-assessment.html">Assignment 2: AI Application for Legal Tasks and Output Assessment</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module5/practice/interactive-quiz.html">Learning Activity 2: Interactive Quiz</a>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Engage
+                            </div>
+                            <div class="activity-item discussion-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module5/discussions/module5-discussion.html">Module 5 Discussion</a>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 6 -->
                     <div class="module-card">
-                        <h3>Module 6: Advanced Prompting for Working Professionals</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module6-content"></i>
+                            Module 6: Advanced Prompting for Working Professionals
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Master sophisticated prompting strategies for complex tasks.</p>
-                        <a href="modules/module6/canvas-welcome.html" class="module-link">Go to Module 6</a>
+                        <a href="modules/module6/welcome.html" class="module-link">Go to Module 6</a>
+                        
+                        <div class="activity-list section-content" id="module6-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module6/assignments/advanced-techniques.html">Module 6.1 Advanced Prompting Techniques</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module6/assignments/pitfalls-guardrails.html">Module 6.2: Uses, Pitfalls, and Guardrails</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module6/practice/advanced-prompting-quiz.html">Low-Stakes Quiz Advanced Prompting</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                            
+                            <div class="activity-item discussion-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module6/discussions/module6-discussion.html">Module 6 Discussion</a>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 7 -->
                     <div class="module-card">
-                        <h3>Module 7: Exploring the Ethics of AI using Advanced Prompting</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module7-content"></i>
+                            Module 7: Exploring the Ethics of AI using Advanced Prompting
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Investigate ethical dimensions of AI through advanced prompting techniques.</p>
-                        <a href="modules/module7/canvas-welcome.html" class="module-link">Go to Module 7</a>
+                        <a href="modules/module7/welcome.html" class="module-link">Go to Module 7</a>
+                        
+                        <div class="activity-list section-content" id="module7-content">
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module7/learning/ethics-blueprint.html">AI Ethics Blueprint: Foundations for Your Professional Portfolio</a>
+                            </div>
+                            
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module7/assignments/ethics-advanced-prompting.html">AI Ethics & Advanced Prompting Techniques</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module7/quizzes/ethics-quiz.html">Low-Stakes Ethics Quiz</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 8 -->
                     <div class="module-card">
-                        <h3>Module 8: AI Tools for Working Professionals</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module8-content"></i>
+                            Module 8: AI Tools for Working Professionals
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Survey practical AI tools for enhancing professional workflows.</p>
-                        <a href="modules/module8/canvas-welcome.html" class="module-link">Go to Module 8</a>
+                        <a href="modules/module8/welcome.html" class="module-link">Go to Module 8</a>
+                        
+                        <div class="activity-list section-content" id="module8-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module8/learning/overview-video.html">Overview video: Exploring AI Tools in Professional Settings</a>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module8/practice/personal-toolkit.html">Assignment 1: AI Tools for Working Professionals, Personal Toolkit Overview</a>
+                            </div>
+                            
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module8/quizzes/tools-quiz.html">Low-Stakes AI Tools Overview Quiz</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Engage
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module8/assignments/toolkit-presentation.html">Presentation of Your AI Tool Kit</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 9 -->
                     <div class="module-card">
-                        <h3>Module 9: AI Learning Tools for Enhancement</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module9-content"></i>
+                            Module 9: Using Learning Enhancement AI Tools, for Working Professionals
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Discover how AI tools can transform learning experiences.</p>
-                        <a href="modules/module9/canvas-welcome.html" class="module-link">Go to Module 9</a>
+                        <a href="modules/module9/welcome.html" class="module-link">Go to Module 9</a>
+                        
+                        <div class="activity-list section-content" id="module9-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module9/learning/instructional-video.html">Instructional Video: Why AI matters in Education and beyond</a>
+                            </div>
+                            
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module9/assignments/learning-tools-list.html">Learning Activity 1: AI Learning Tools List</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module9/assignments/tool-exploration.html">Assignment 1: AI Tool Exploration Templates</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Engage
+                            </div>
+                            
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module9/quizzes/learning-enhancement-quiz.html">Low-Stakes AI tools - Learning Enhancement</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Module 10 -->
                     <div class="module-card">
-                        <h3>Module 10: How will AGI Impact YOUR Career?</h3>
+                        <h3>
+                            <i class="fas fa-chevron-right section-toggle" data-target="module10-content"></i>
+                            Module 10: How will AGI Impact YOUR Career?
+                            <span class="module-status"><i class="fas fa-check-circle"></i></span>
+                        </h3>
                         <p class="module-desc">Explore potential future impacts of artificial general intelligence on legal careers.</p>
-                        <a href="modules/module10/canvas-welcome.html" class="module-link">Go to Module 10</a>
+                        <a href="modules/module10/welcome.html" class="module-link">Go to Module 10</a>
+                        
+                        <div class="activity-list section-content" id="module10-content">
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Learning
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module10/learning/overview-video.html">Overview video: Exploring AI Tools in Professional Settings</a>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Practice
+                            </div>
+                            <div class="activity-item quiz-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module10/quizzes/agi-quiz.html">Low-Stakes AGI Quiz</a>
+                                <span class="pts">10 pts</span>
+                            </div>
+                            
+                            <div class="activity-type">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                Engage
+                            </div>
+                            <div class="activity-item page-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module10/assignments/agi-impact.html">Module 10 Assignment: AGI impact on your career</a>
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module10/assignments/agi-impact-submission.html">Module 10 assignment use this one robinson well and the page associated with it</a>
+                                <span class="pts">0 pts</span>
+                            </div>
+                            <div class="activity-item assignment-item">
+                                <i class="fas fa-check-circle status-icon"></i>
+                                <a href="modules/module10/assignments/final-portfolio.html">Dummy page for Final portfolio</a>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div id="assignments" class="objectives-section">
+                        <h2>ALL ASSIGNMENTS</h2>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="modules/module3/assignments/week3-submission.html">Week 3 Assignment: Chatbot Application</a></li>
+                        <li><a href="modules/module4/learning/tool-comparison.html">Module 4: Tool Comparison Matrix</a></li>
+                        <li><a href="modules/module4/learning/prompt-engineering.html">Module 4: Prompt Engineering & Media Creation</a></li>
+                        <li><a href="modules/module4/practice/media-portfolio.html">Module 4: AI Media Portfolio</a></li>
+                        <li><a href="modules/module5/assignments/legal-tools-comparison.html">Module 5: AI Legal Tools Comparison</a></li>
+                        <li><a href="modules/module5/assignments/legal-tasks-assessment.html">Module 5: AI Application for Legal Tasks</a></li>
+                        <li><a href="modules/module6/assignments/advanced-techniques.html">Module 6: Advanced Prompting Techniques</a></li>
+                        <li><a href="modules/module6/assignments/pitfalls-guardrails.html">Module 6: Uses, Pitfalls, and Guardrails</a></li>
+                        <li><a href="modules/module7/assignments/ethics-advanced-prompting.html">Module 7: AI Ethics & Advanced Prompting</a></li>
+                        <li><a href="modules/module8/assignments/toolkit-presentation.html">Module 8: AI Tool Kit Presentation</a></li>
+                        <li><a href="modules/module9/assignments/learning-tools-list.html">Module 9: AI Learning Tools List</a></li>
+                        <li><a href="modules/module9/assignments/tool-exploration.html">Module 9: AI Tool Exploration Templates</a></li>
+                        <li><a href="modules/module10/assignments/agi-impact.html">Module 10: AGI Impact on Your Career</a></li>
+                        <li><a href="modules/module10/assignments/final-portfolio.html">Module 10: Final Portfolio</a></li>
+                    </ul>
+                    
+                    <div id="discussions" class="objectives-section">
+                        <h2>ALL DISCUSSIONS</h2>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="modules/module1/discussions/historical-patterns.html">Module 1: Historical Patterns in AI Development</a></li>
+                        <li><a href="modules/module2/discussions/module2-discussion.html">Module 2: Basic Prompting Discussion</a></li>
+                        <li><a href="modules/module4/discussions/module4-discussion.html">Module 4: Media Creation Discussion</a></li>
+                        <li><a href="modules/module5/discussions/module5-discussion.html">Module 5: AI Tools in Legal Settings Discussion</a></li>
+                        <li><a href="modules/module6/discussions/module6-discussion.html">Module 6: Advanced Prompting Discussion</a></li>
+                    </ul>
+                    
+                    <div id="quizzes" class="objectives-section">
+                        <h2>ALL QUIZZES</h2>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="modules/module1/practice/history-quiz.html">Module 1: History of AI Quiz</a></li>
+                        <li><a href="modules/module2/practice/basic-prompting-quiz.html">Module 2: Basic Prompting Quiz</a></li>
+                        <li><a href="modules/module3/practice/chatbot-quiz.html">Module 3: Chatbot Quiz</a></li>
+                        <li><a href="modules/module4/quizzes/media-creation-quiz.html">Module 4: Media Creation Quiz</a></li>
+                        <li><a href="modules/module6/practice/advanced-prompting-quiz.html">Module 6: Advanced Prompting Quiz</a></li>
+                        <li><a href="modules/module7/quizzes/ethics-quiz.html">Module 7: Ethics Quiz</a></li>
+                        <li><a href="modules/module8/quizzes/tools-quiz.html">Module 8: AI Tools Overview Quiz</a></li>
+                        <li><a href="modules/module9/quizzes/learning-enhancement-quiz.html">Module 9: Learning Enhancement Quiz</a></li>
+                        <li><a href="modules/module10/quizzes/agi-quiz.html">Module 10: AGI Quiz</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize section toggles
+            const toggles = document.querySelectorAll('.section-toggle');
+            
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetContent = document.getElementById(targetId);
+                    
+                    // Toggle the content visibility
+                    if (targetContent.classList.contains('open')) {
+                        targetContent.classList.remove('open');
+                        this.classList.remove('fa-chevron-down');
+                        this.classList.add('fa-chevron-right');
+                    } else {
+                        targetContent.classList.add('open');
+                        this.classList.remove('fa-chevron-right');
+                        this.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
