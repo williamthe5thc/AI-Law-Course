@@ -1,0 +1,64 @@
+/* Enhanced navigation button styles */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #a20000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #e6e6e6;
+    border-color: #c0c0c0;
+}
+
+.nav-button.prev {
+    background-color: #f8f8f8;
+}
+
+.nav-button.next {
+    background-color: #f8f8f8;
+}
+
+.key-concepts {
+    margin-top: 25px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #a20000;
+    border-radius: 4px;
+}
+
+.key-concepts h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.key-concepts ul {
+    margin-bottom: 0;
+}
+
+/* Enhanced tips section */
+.tips-section {
+    background-color: #e8f4f8;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.tips-section h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}

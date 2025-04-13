@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1: AI Legal Tools Comparison - AI in Law Course</title>
+    <link rel="stylesheet" href="../../../css/canvas-styles.css">
+    <link rel="stylesheet" href="../../../css/enhanced-navigation.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Additional styles for the assignment page */
+        .assignment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .assignment-controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 6px 12px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .btn-published {
+            background-color: #34a853;
+            color: white;
+            border-color: #2e7d32;
+        }
+        
+        .btn-edit {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+        }
+        
+        .section-header {
+            background-color: #f1c151;
+            color: #000;
+            padding: 8px;
+            margin: 20px 0 10px 0;
+        }
+        
+        .submission-header {
+            background-color: #bdbdbd;
+            color: #000;
+            padding: 8px;
+            margin: 20px 0 10px 0;
+        }
+        
+        .template-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #001c6b;
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .assignment-intro {
+            background-color: #e2dbdb;
+            color: #000;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        .assignment-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../../../images/utah-logo.png" alt="U Logo">
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-user"></i><br>
+                Account
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-tachometer-alt"></i><br>
+                Dashboard
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="../../../index.html">
+                <i class="fas fa-book"></i><br>
+                Courses
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-calendar"></i><br>
+                Calendar
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-inbox"></i><br>
+                Inbox
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-clock"></i><br>
+                History
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-question-circle"></i><br>
+                Help
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="breadcrumbs">
+                <a href="../../../index.html">AI in Law</a> <span>›</span> 
+                <a href="../welcome.html">Module 5</a> <span>›</span> 
+                Assignment 1: AI Legal Tools Comparison
+            </div>
+        </div>
+
+        <!-- Main Content Container -->
+        <div style="display: flex;">
+            <!-- Left Navigation -->
+            <div class="left-nav">
+                <ul>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../welcome.html">Module Overview</a></li>
+                    <li><a href="../learning/exploring-legal-ai-tools.html">Learning Activities</a></li>
+                    <li><a href="../practice/interactive-quiz.html">Practice Activities</a></li>
+                    <li><a href="#" class="active">Assignments</a></li>
+                    <li><a href="../discussions/module5-discussion.html">Discussions</a></li>
+                </ul>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-container">
+                <div class="assignment-header">
+                    <h1 class="page-title">Assignment 1: AI Legal Tools Comparison</h1>
+                </div>
+                
+                <div class="content-body">
+                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp;<i class="far fa-smile" aria-hidden="true"><span class="dp-icon-content" style="display: none;">&nbsp;</span></i>&nbsp;Module 5 - Assignment 1: Exploring AI Tools in Legal Settings</strong></span></p>
+                    
+                    <div style="background-color: #ffffff; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                        <p style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">For Assignment 1, you will explore and compare AI tools that can enhance your legal practice or research. Select and analyze at least three different AI tools from the categories provided on the previous page:</span></p>
+                        <ul style="font-family: 'Balsamiq Sans', sans-serif;">
+                            <li><span style="font-family: arial, helvetica, sans-serif;">Research Tools (e.g., Westlaw Edge AI, LexisNexis Lexis+, Casetext CARA A.I.)</span></li>
+                            <li><span style="font-family: arial, helvetica, sans-serif;">Document Analysis &amp; Generation (e.g., Kira Systems, LawGeex, Clearlaw)</span></li>
+                            <li><span style="font-family: arial, helvetica, sans-serif;">General AI Tools Applied to Legal (e.g., ChatGPT, Claude, Perplexity AI)</span></li>
+                            <li><span style="font-family: arial, helvetica, sans-serif;">Specialty Legal AI Tools (e.g., Lex Machina, Disco, PatentPal)</span></li>
+                        </ul>
+                        <p style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">You will document the capabilities of these tools and complete a comparison matrix to analyze their potential value in your legal practice.</span></p>
+                        <p style="font-family: 'Balsamiq Sans', sans-serif;">&nbsp;</p>
+                        <p style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><a class="Button" style="color: #ffffff; font-size: 18pt; background-color: #001c6b;" href="https://docs.google.com/document/d/1wlGD09VtAYZBiemv2-kMRl5Hyi6R_fDgvp-S_tKxNMg/edit?usp=copy" target="_blank" rel="noopener"> Click Here to Make a Copy of this Template</a></span></p>
+                        <p style="font-family: 'Balsamiq Sans', sans-serif;">&nbsp;</p>
+                        <h3 style="background-color: #f1c151; color: #000000; border-top-color: #ae3225; font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">AI Legal Tools Comparison Matrix</span></h3>
+                        <table style="width: 100%;" border="1" cellspacing="0" cellpadding="5">
+                            <thead>
+                                <tr style="background-color: #f8f9fa;">
+                                    <th style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">Feature</span></th>
+                                    <th style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">Tool 1</span></th>
+                                    <th style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">Tool 2</span></th>
+                                    <th style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">Tool 3</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Tool Name</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr style="background-color: #f8f9fa;">
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Category</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">(Research, Document Analysis, etc.)</span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>How to Access</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">(Website, Subscription, etc.)</span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr style="background-color: #f8f9fa;">
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Cost Structure</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">(Free, Freemium, Subscription)</span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Key Features</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr style="background-color: #f8f9fa;">
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Ease of Use (1-5)</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">(1-Difficult, 5-Easy)</span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Specific Legal Tasks</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">(What tasks does it support?)</span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr style="background-color: #f8f9fa;">
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Integration Capabilities</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">(Works with other tools?)</span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Strengths</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                                <tr style="background-color: #f8f9fa;">
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Limitations</strong></span></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                    <td style="font-family: 'Balsamiq Sans', sans-serif;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <h3 style="background-color: #bdbdbd; color: #000000; border-top-color: #40bcc4; font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">SUBMISSION INSTRUCTIONS</span></h3>
+                        <p style="font-family: 'Balsamiq Sans', sans-serif;"><span style="font-family: arial, helvetica, sans-serif;">After completing your AI legal tools comparison matrix, submit your completed Google Doc through Canvas below.</span></p>
+                    </div>
+                    
+                    <div class="key-concepts">
+                        <h3>Key Concepts</h3>
+                        <ul>
+                            <li><strong>Tool Evaluation Framework</strong>: Methods for systematically assessing legal AI tools</li>
+                            <li><strong>Comparative Analysis</strong>: Assessing relative strengths and limitations across tools</li>
+                            <li><strong>Practical Application</strong>: Matching tool capabilities to specific legal tasks</li>
+                            <li><strong>Implementation Considerations</strong>: Factors affecting successful adoption in legal practice</li>
+                            <li><strong>ROI Assessment</strong>: Evaluating cost-benefit relationship for legal technology</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tips-section">
+                        <h3>Tips for Success</h3>
+                        <ul>
+                            <li><strong>Focus on specific use cases</strong> - Evaluate tools based on your actual practice needs</li>
+                            <li><strong>Try free trials when available</strong> - Hands-on testing provides deeper insights</li>
+                            <li><strong>Consider security requirements</strong> - Note compliance with legal data security standards</li>
+                            <li><strong>Document integration capabilities</strong> - Compatibility with existing systems is crucial</li>
+                            <li><strong>Be thorough in your evaluation</strong> - Detailed analysis produces more valuable comparisons</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="../practice/interactive-quiz.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Interactive Quiz</a>
+                        <a href="legal-tasks-assessment.html" class="nav-button next">Next: Legal Tasks Assessment <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
