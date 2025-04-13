@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="../../css/canvas-styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Additional styles for navigation buttons */
+        .module-sequence-footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .module-sequence-footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .module-sequence-footer-button--previous a,
+        .module-sequence-footer-button--next a {
+            display: flex;
+            align-items: center;
+            color: #a20000;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+        }
+        
+        .module-sequence-footer-button--previous a:hover,
+        .module-sequence-footer-button--next a:hover {
+            background-color: #e5e5e5;
+        }
+    </style>
 </head>
 <body>
     <!-- Sidebar -->
@@ -27,7 +57,7 @@
             </a>
         </div>
         <div class="sidebar-item">
-            <a href="#">
+            <a href="../../canvas-index.html">
                 <i class="fas fa-book"></i><br>
                 Courses
             </a>
@@ -66,7 +96,7 @@
                 <i class="fas fa-bars"></i>
             </div>
             <div class="breadcrumbs">
-                <a href="#">AI</a> <span>›</span> <a href="#">Pages</a> <span>›</span> Module 4 Welcome Page
+                <a href="../../canvas-index.html">AI in Law</a> <span>›</span> Module 4 Welcome Page
             </div>
         </div>
 
@@ -75,18 +105,13 @@
             <!-- Left Navigation -->
             <div class="left-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Assignments</a></li>
-                    <li><a href="#">Discussions</a></li>
+                    <li><a href="../../canvas-index.html">Home</a></li>
+                    <li><a href="#" class="active">Module Overview</a></li>
+                    <li><a href="learning/tool-comparison.html">Learning Activities</a></li>
+                    <li><a href="practice/media-quiz.html">Quizzes</a></li>
+                    <li><a href="assignments/assignment1-tool-comparison.html">Assignments</a></li>
+                    <li><a href="discussions/module4-discussion.html">Discussions</a></li>
                     <li><a href="#">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#" class="active">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Chat</a></li>
                 </ul>
             </div>
 
@@ -168,6 +193,28 @@
                             <li><strong>Document your process</strong> - Keep track of effective prompts for future use</li>
                             <li><strong>Consider ethical implications</strong> - Be transparent about AI-generated content when appropriate</li>
                         </ul>
+                    </div>
+                    
+                    <!-- Module Navigation -->
+                    <div id="module_navigation_target">
+                        <div class="module-sequence-footer" role="navigation" aria-label="Module Navigation">
+                            <div class="module-sequence-footer-content">
+                                <div class="module-sequence-footer-left">
+                                    <span class="module-sequence-footer-button--previous">
+                                        <a href="../module3/canvas-welcome.html" aria-label="Previous Module">
+                                            <i class="fas fa-arrow-left"></i> Previous Module
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="module-sequence-footer-right">
+                                    <span class="module-sequence-footer-button--next">
+                                        <a href="../module5/canvas-welcome.html" aria-label="Next Module">
+                                            Next Module <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

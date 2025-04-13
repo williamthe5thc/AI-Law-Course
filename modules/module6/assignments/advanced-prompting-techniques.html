@@ -5,8 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Prompting Techniques - AI in Law Course</title>
     <link rel="stylesheet" href="../../../css/canvas-styles.css">
+    <link rel="stylesheet" href="../../../css/enhanced-navigation.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .technique-container {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        .technique-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #a20000;
+            font-size: 18px;
+        }
+        
+        .technique-description {
+            margin-bottom: 15px;
+        }
+        
+        .prompt-example {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-left: 3px solid #a20000;
+            margin-bottom: 15px;
+            font-family: monospace;
+        }
+        
+        .assignment-task {
+            background-color: #e8f4f8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .submission-instructions {
+            background-color: #f1c151;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <!-- Sidebar -->
@@ -27,7 +70,7 @@
             </a>
         </div>
         <div class="sidebar-item">
-            <a href="../../../canvas-index.html">
+            <a href="../../../index.html">
                 <i class="fas fa-book"></i><br>
                 Courses
             </a>
@@ -66,7 +109,7 @@
                 <i class="fas fa-bars"></i>
             </div>
             <div class="breadcrumbs">
-                <a href="../../../canvas-index.html">AI in Law</a> <span>›</span> 
+                <a href="../../../index.html">AI in Law</a> <span>›</span> 
                 <a href="../welcome.html">Module 6</a> <span>›</span> 
                 Advanced Prompting Techniques
             </div>
@@ -77,7 +120,7 @@
             <!-- Left Navigation -->
             <div class="left-nav">
                 <ul>
-                    <li><a href="../../../canvas-index.html">Home</a></li>
+                    <li><a href="../../../index.html">Home</a></li>
                     <li><a href="../welcome.html">Module Overview</a></li>
                     <li><a href="#" class="active">Assignments</a></li>
                     <li><a href="../practice/advanced-prompting-quiz.html">Quizzes</a></li>
@@ -88,18 +131,106 @@
 
             <!-- Content Area -->
             <div class="content-container">
-                <h1 class="page-title">Advanced Prompting Techniques</h1>
+                <h1 class="page-title">Module 6.1: Advanced Prompting Techniques</h1>
                 
                 <div class="content-body">
-                    <!-- Placeholder for assignment content -->
-                    <div class="objectives-section">
-                        <h2>ASSIGNMENT PLACEHOLDER</h2>
+                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp; <i class="far fa-smile" aria-hidden="true"> <span class="dp-icon-content" style="display: none;">&nbsp;</span> </i> Advanced Prompting Techniques Assignment&nbsp;</strong></span></p>
+                    
+                    <p>In this assignment, you will learn and apply three advanced prompting techniques that can significantly enhance your interactions with AI systems, especially for complex legal tasks. These techniques will help you generate more precise, contextually relevant, and well-reasoned outputs from AI tools.</p>
+                    
+                    <div class="technique-container">
+                        <div class="technique-title">1. Role-Based Prompting</div>
+                        <div class="technique-description">
+                            <p>Role-based prompting involves instructing the AI to adopt a specific professional role or perspective when responding to your queries. This technique leverages the AI's ability to adapt its outputs based on different expertise frameworks, allowing for more specialized responses.</p>
+                            
+                            <p><strong>Why it works:</strong> Large language models have been trained on diverse content written by experts in various fields. By assigning a role, you're essentially directing the model to draw more heavily from patterns associated with that expertise domain.</p>
+                        </div>
+                        
+                        <div class="prompt-example">
+                            <p><strong>Basic Example:</strong></p>
+                            <p>"Analyze the following contract clause."</p>
+                            
+                            <p><strong>Role-Based Example:</strong></p>
+                            <p>"Act as an experienced corporate transactions attorney with expertise in technology licensing agreements. Analyze the following contract clause, highlighting potential risks and suggesting improvements:"</p>
+                        </div>
                     </div>
-                    <p>This is a placeholder for the Advanced Prompting Techniques assignment. Content will be added later.</p>
+                    
+                    <div class="technique-container">
+                        <div class="technique-title">2. Chain-of-Thought (CoT) Prompting</div>
+                        <div class="technique-description">
+                            <p>Chain-of-Thought prompting encourages the AI to break down complex reasoning processes into sequential steps, similar to how humans work through difficult problems. This technique improves outputs for tasks requiring logical analysis or multi-step reasoning.</p>
+                            
+                            <p><strong>Why it works:</strong> By prompting the AI to generate intermediate reasoning steps, you help guide the model's thinking process and reduce the likelihood of logical errors or oversimplifications.</p>
+                        </div>
+                        
+                        <div class="prompt-example">
+                            <p><strong>Basic Example:</strong></p>
+                            <p>"Is this email likely to violate GDPR compliance requirements?"</p>
+                            
+                            <p><strong>Chain-of-Thought Example:</strong></p>
+                            <p>"Analyze whether the following email likely violates GDPR compliance requirements. First, identify all personal data elements in the email. Second, determine what legal basis might exist for processing this data. Third, evaluate whether appropriate consent mechanisms are present. Finally, conclude whether this email appears to comply with GDPR and explain why:"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="technique-container">
+                        <div class="technique-title">3. Retrieval-Augmented Generation (RAG)</div>
+                        <div class="technique-description">
+                            <p>Retrieval-Augmented Generation involves providing the AI with specific reference materials or data within your prompt that it should use to inform its response. This technique is particularly valuable for ensuring accuracy in specialized domains or when you need responses grounded in specific documents.</p>
+                            
+                            <p><strong>Why it works:</strong> By supplying targeted reference information, you overcome the AI's knowledge limitations and reduce the likelihood of hallucinations or outdated information in its responses.</p>
+                        </div>
+                        
+                        <div class="prompt-example">
+                            <p><strong>Basic Example:</strong></p>
+                            <p>"Summarize the key provisions in the Smith v. Jones case."</p>
+                            
+                            <p><strong>RAG Example:</strong></p>
+                            <p>"Using only the following excerpt from the Smith v. Jones case ruling, summarize the key provisions established by the court: [insert relevant excerpt from the case]"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="assignment-task">
+                        <h3>Your Assignment:</h3>
+                        
+                        <p>Create and test advanced prompts for three different legal tasks, each using a different advanced prompting technique covered above. For each task:</p>
+                        
+                        <ol>
+                            <li><strong>Craft the prompt</strong> using the assigned technique</li>
+                            <li><strong>Test the prompt</strong> with an AI system (e.g., ChatGPT, Claude, or another available system)</li>
+                            <li><strong>Document the response</strong> you received</li>
+                            <li><strong>Reflect on the effectiveness</strong> of the technique for this specific task</li>
+                        </ol>
+                        
+                        <p><strong>Task 1 (Role-Based):</strong> Create a prompt to analyze a contract clause for potential issues.</p>
+                        <p><strong>Task 2 (Chain-of-Thought):</strong> Create a prompt to evaluate a complex legal ethics scenario.</p>
+                        <p><strong>Task 3 (RAG):</strong> Create a prompt to extract key information from a court decision or legal document of your choice.</p>
+                    </div>
+                    
+                    <div class="submission-instructions">
+                        <h3>Submission Instructions:</h3>
+                        <p>Submit a document containing:</p>
+                        <ol>
+                            <li>Your three prompts (clearly labeled with the technique used)</li>
+                            <li>The AI-generated responses you received</li>
+                            <li>A brief reflection (250-300 words) discussing which technique you found most effective for legal tasks and why</li>
+                        </ol>
+                        <p>Your submission will be evaluated based on your understanding and application of the advanced prompting techniques, the appropriateness of your prompts for the legal tasks, and the quality of your reflection.</p>
+                    </div>
+                    
+                    <div class="key-concepts">
+                        <h3>Key Concepts</h3>
+                        <ul>
+                            <li><strong>Role Specification</strong>: Directing AI responses by assigning expert perspectives</li>
+                            <li><strong>Reasoning Steps</strong>: Breaking complex analysis into logical sequences</li>
+                            <li><strong>Document Grounding</strong>: Using specific reference materials to inform AI outputs</li>
+                            <li><strong>Technique Selection</strong>: Matching prompting approaches to specific task requirements</li>
+                            <li><strong>Output Evaluation</strong>: Assessing response quality and technique effectiveness</li>
+                        </ul>
+                    </div>
                     
                     <div class="navigation-buttons">
-                        <a href="../welcome.html"><i class="fas fa-arrow-left"></i> Module Overview</a>
-                        <a href="pitfalls-and-guardrails.html">Next: Pitfalls and Guardrails <i class="fas fa-arrow-right"></i></a>
+                        <a href="../welcome.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Module Overview</a>
+                        <a href="pitfalls-and-guardrails.html" class="nav-button next">Next: Pitfalls and Guardrails <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

@@ -3,216 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Low-Stakes AI tools - Learning Enhancement Quiz</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <style>
-        .quiz-container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        
-        .question {
-            background-color: #f8f9fa;
-            padding: 15px;
-            margin: 20px 0;
-            border-left: 4px solid #4b6cb7;
-            border-radius: 4px;
-        }
-        
-        .options {
-            margin-left: 20px;
-        }
-        
-        .option {
-            margin: 8px 0;
-            padding: 8px;
-            background-color: #f1f1f1;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .option:hover {
-            background-color: #e1e1e1;
-        }
-        
-        .quiz-info {
-            background-color: #e8f4f8;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .submit-btn {
-            background-color: #4b6cb7;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-        
-        .submit-btn:hover {
-            background-color: #3a5999;
-        }
-    </style>
+    <title>Learning Activity 2: Interactive Quiz - AI in Law Course</title>
+    <link rel="stylesheet" href="../../css/canvas-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>AI in Law Course</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="welcome.html">Module 9</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="activities.html">Activities</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <div class="module-header">
-            <h1>Low-Stakes AI tools - Learning Enhancement Quiz</h1>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../../images/utah-logo.png" alt="U Logo">
         </div>
-        
-        <div class="quiz-container">
-            <div class="quiz-info">
-                <h2>Quiz Overview</h2>
-                <p>This low-stakes quiz is designed to check your understanding of AI learning tools and their applications. It's worth 10 points and is meant to reinforce key concepts from Module 9.</p>
-                
-                <h3>Instructions:</h3>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-user"></i><br>
+                Account
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-tachometer-alt"></i><br>
+                Dashboard
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="../../canvas-index.html">
+                <i class="fas fa-book"></i><br>
+                Courses
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-calendar"></i><br>
+                Calendar
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-inbox"></i><br>
+                Inbox
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-clock"></i><br>
+                History
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="#">
+                <i class="fas fa-question-circle"></i><br>
+                Help
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="breadcrumbs">
+                <a href="../../canvas-index.html">AI in Law</a> <span>›</span> 
+                <a href="welcome.html">Module 9</a> <span>›</span>
+                Learning Activity 2
+            </div>
+        </div>
+
+        <!-- Main Content Container -->
+        <div style="display: flex;">
+            <!-- Left Navigation -->
+            <div class="left-nav">
                 <ul>
-                    <li>Answer all 10 questions</li>
-                    <li>You have 20 minutes to complete the quiz</li>
-                    <li>This is an open-book assessment - feel free to reference course materials</li>
+                    <li><a href="../../canvas-index.html">Home</a></li>
+                    <li><a href="welcome.html">Module Overview</a></li>
+                    <li><a href="#" class="active">Learning Activities</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="discussion-board.html">Discussions</a></li>
+                    <li><a href="#">Grades</a></li>
                 </ul>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-container">
+                <h1 class="page-title">Learning Activity 2: Interactive Quiz</h1>
                 
-                <p><strong>Note:</strong> In a real interactive quiz environment, you would be able to select answers and submit them. This static page simply demonstrates the quiz format and questions.</p>
-            </div>
-            
-            <div class="question">
-                <h3>Question 1:</h3>
-                <p>Which of the following best describes "adaptive learning systems"?</p>
-                <div class="options">
-                    <div class="option">A) Systems that adapt to different screen sizes and devices</div>
-                    <div class="option">B) Learning platforms that adjust content and pace based on individual learner performance</div>
-                    <div class="option">C) Educational programs that can be adapted by teachers for different subjects</div>
-                    <div class="option">D) Systems that adapt course materials for different languages</div>
+                <div class="content-body">
+                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;"><strong> &nbsp; <i class="far fa-smile" aria-hidden="true"> <span class="dp-icon-content" style="display: none;">&nbsp;</span> </i> Learning Activity 2: Interactive Quiz</strong></p>
+                    
+                    <p>This interactive, scenario-based assessment will test your ability to identify proper AI tools each case. You'll apply critical thinking skills to evaluate AI outputs against authoritative sources.&nbsp;</p>
+                    
+                    <p><i class="fa fa-hand-o-right" aria-hidden="true"><span class="dp-icon-content" style="display: none;">&nbsp;</span></i><span style="text-decoration: underline;"><em>The assessment will be scored automatically, with results available immediately after completion</em></span></p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <p><iframe src="https://utah.instructure.com/courses/1015153/files/178155248/preview" width="100%" height="700px" loading="lazy" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" data-api-endpoint="https://utah.instructure.com/api/v1/courses/1015153/files/178155248" data-api-returntype="File"></iframe></p>
+                    
+                    <div style="background-color: #e8f4f8; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #3498db;">
+                        <h3>Quiz Features</h3>
+                        <ul>
+                            <li>Scenario-based questions test your ability to apply knowledge in realistic situations</li>
+                            <li>Immediate feedback helps reinforce learning</li>
+                            <li>Results can be saved for your personal reference</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="learning-tools-list.html"><i class="fas fa-arrow-left"></i> Back to Learning Tools List</a>
+                        <a href="instructional-video.html">Next: Instructional Video <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="question">
-                <h3>Question 2:</h3>
-                <p>When comparing AI-assisted learning approaches to traditional methods, which of the following is generally NOT an advantage of AI tools?</p>
-                <div class="options">
-                    <div class="option">A) Faster information processing</div>
-                    <div class="option">B) More personalized learning experiences</div>
-                    <div class="option">C) Deeper critical analysis of complex concepts</div>
-                    <div class="option">D) Immediate feedback on performance</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 3:</h3>
-                <p>Which AI tool category would be most appropriate for a law student who needs help organizing and connecting ideas across multiple case readings?</p>
-                <div class="options">
-                    <div class="option">A) AI Writing Assistants</div>
-                    <div class="option">B) Adaptive Learning Systems</div>
-                    <div class="option">C) Knowledge Management Tools</div>
-                    <div class="option">D) Virtual Learning Assistants</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 4:</h3>
-                <p>What is a key consideration when creating prompts for AI learning tools?</p>
-                <div class="options">
-                    <div class="option">A) Always keep prompts as short as possible</div>
-                    <div class="option">B) Include specific context and desired output format</div>
-                    <div class="option">C) Use technical jargon to get more sophisticated responses</div>
-                    <div class="option">D) Focus only on factual questions, not conceptual ones</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 5:</h3>
-                <p>Which ethical consideration is most relevant when using AI tools for collaborative learning projects?</p>
-                <div class="options">
-                    <div class="option">A) Properly attributing AI-generated content</div>
-                    <div class="option">B) Ensuring all team members have equal access to AI tools</div>
-                    <div class="option">C) Limiting AI use to non-graded components only</div>
-                    <div class="option">D) Using only open-source AI tools</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 6:</h3>
-                <p>What is a potential limitation of using AI learning tools for professional development?</p>
-                <div class="options">
-                    <div class="option">A) They may provide outdated information on rapidly changing topics</div>
-                    <div class="option">B) They typically require advanced programming knowledge</div>
-                    <div class="option">C) They often cost more than traditional learning resources</div>
-                    <div class="option">D) They are usually limited to text-based learning only</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 7:</h3>
-                <p>Which approach is recommended when implementing AI tools in a learning environment for the first time?</p>
-                <div class="options">
-                    <div class="option">A) Replace all traditional methods with AI-based alternatives immediately</div>
-                    <div class="option">B) Start with a specific task and gradually expand based on results</div>
-                    <div class="option">C) Focus only on administrative tasks where AI has proven effectiveness</div>
-                    <div class="option">D) Wait until AI tools become more advanced before implementation</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 8:</h3>
-                <p>A legal professional wants to use AI to help prepare for a complex case. Which combination of tools would be most effective?</p>
-                <div class="options">
-                    <div class="option">A) Knowledge management tool + AI writing assistant</div>
-                    <div class="option">B) Virtual learning assistant + adaptive learning system</div>
-                    <div class="option">C) Adaptive learning system + AI writing assistant</div>
-                    <div class="option">D) Knowledge management tool + virtual learning assistant</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 9:</h3>
-                <p>When evaluating the effectiveness of an AI learning tool, which metric is generally most valuable?</p>
-                <div class="options">
-                    <div class="option">A) Processing speed of the AI system</div>
-                    <div class="option">B) Number of features available</div>
-                    <div class="option">C) Impact on learning outcomes and understanding</div>
-                    <div class="option">D) Cost compared to traditional methods</div>
-                </div>
-            </div>
-            
-            <div class="question">
-                <h3>Question 10:</h3>
-                <p>Which statement best reflects the current recommended approach to AI in professional learning?</p>
-                <div class="options">
-                    <div class="option">A) AI should replace traditional learning methods wherever possible to maximize efficiency</div>
-                    <div class="option">B) AI should be viewed as a supplementary tool that enhances human learning rather than replacing it</div>
-                    <div class="option">C) AI is primarily useful for beginners but offers limited value for advanced professionals</div>
-                    <div class="option">D) AI tools should be limited to non-essential skills to minimize dependence on technology</div>
-                </div>
-            </div>
-            
-            <button class="submit-btn">Submit Quiz</button>
         </div>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 AI in Law Course. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>

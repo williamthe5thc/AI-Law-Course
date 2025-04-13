@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero-Shot Prompting - AI in Law Course</title>
     <link rel="stylesheet" href="../../../css/canvas-styles.css">
+    <link rel="stylesheet" href="../../../css/enhanced-navigation.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -27,7 +28,7 @@
             </a>
         </div>
         <div class="sidebar-item">
-            <a href="../../../canvas-index.html">
+            <a href="../../../index.html">
                 <i class="fas fa-book"></i><br>
                 Courses
             </a>
@@ -66,7 +67,7 @@
                 <i class="fas fa-bars"></i>
             </div>
             <div class="breadcrumbs">
-                <a href="../../../canvas-index.html">AI in Law</a> <span>›</span> 
+                <a href="../../../index.html">AI in Law</a> <span>›</span> 
                 <a href="../welcome.html">Module 2</a> <span>›</span> 
                 Zero-Shot Prompting
             </div>
@@ -77,7 +78,7 @@
             <!-- Left Navigation -->
             <div class="left-nav">
                 <ul>
-                    <li><a href="../../../canvas-index.html">Home</a></li>
+                    <li><a href="../../../index.html">Home</a></li>
                     <li><a href="../welcome.html">Module Overview</a></li>
                     <li><a href="#" class="active">Learning Activities</a></li>
                     <li><a href="../practice/basic-prompting-quiz.html">Quizzes</a></li>
@@ -88,14 +89,12 @@
 
             <!-- Content Area -->
             <div class="content-container">
-                <h1 class="page-title">Zero-Shot Prompting Techniques</h1>
+                <h1 class="page-title">Zero-Shot Prompting</h1>
                 
                 <div class="content-body">
-                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp; <i class="far fa-smile" aria-hidden="true"></i> Learning Activity 2 - Overview: Zero Shot Prompting Techniques</strong></span></p>
+                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp; <i class="far fa-smile" aria-hidden="true"> <span class="dp-icon-content" style="display: none;">&nbsp;</span> </i> Learning Activity 1: Zero-Shot Prompting Techniques&nbsp;</strong></span></p>
                     
-                    <p class="whitespace-pre-wrap break-words">Ready to master different types of prompts? Think of these as different "conversation styles" with AI - each has its own use cases and benefits!&nbsp;</p>
-                    
-                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp; <i class="far fa-smile" aria-hidden="true"></i> Learning Activity 2.1: Video on Zero Shot Prompting Techniques</strong></span></p>
+                    <p class="whitespace-pre-wrap break-words">Ready to master different types of prompts? Think of these as different "conversation styles" with AI - each has its own use cases and benefits!</p>
                     
                     <p class="font-600 text-lg font-bold"><span style="font-size: 1rem;">As you watch, try to answer the following questions:</span></p>
                     <ol style="list-style-type: decimal;">
@@ -113,37 +112,45 @@
                         </div>
                     </div>
                     
-                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp; <i class="far fa-smile" aria-hidden="true"></i> Learning Activity 2.2 (Self-Check):</strong></span></p>
+                    <p class="kl_shadow_b3" style="background-color: #e2dbdb; color: #000000; font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp; <i class="far fa-smile" aria-hidden="true"> <span class="dp-icon-content" style="display: none;">&nbsp;</span> </i> Learning Activity 2: Legal Examples (Self-Check)&nbsp;</strong></span></p>
                     
                     <p class="nx-mt-6 nx-leading-7 first:nx-mt-0"><span style="font-size: 12pt;">As you read through these Legal Examples, see if you can identify the <strong>4 pillars of prompting in each 'Quality Prompt':</strong></span></p>
                     
                     <p class="nx-mt-6 nx-leading-7 first:nx-mt-0"><em><span class="notion-enable-hover" data-token-index="0">Example 1: Contract Analysis</span></em></p>
-                    <div class="example-box">
-                        <pre class="nx-bg-primary-700/5 nx-mb-4 nx-overflow-x-auto nx-rounded-xl nx-subpixel-antialiased dark:nx-bg-primary-300/10 nx-text-[.9em] contrast-more:nx-border contrast-more:nx-border-primary-900/20 contrast-more:nx-contrast-150 contrast-more:dark:nx-border-primary-100/40 nx-py-4" data-language="text" data-theme="default">Bad Prompt ❌: "Check this contract."
-
-Quality Prompt ✅: "Analyze this employment contract for potential liability issues, focusing specifically on non-compete clauses, termination conditions, and compensation terms. Highlight any ambiguous language that could lead to legal disputes."</pre>
+                    <div class="nextra-code-block nx-relative nx-mt-6 first:nx-mt-0" style="margin: 20px 0; padding: 15px; background-color: #f5f5f5; border-radius: 4px;">
+                        <pre class="nx-bg-primary-700/5 nx-mb-4 nx-overflow-x-auto nx-rounded-xl nx-subpixel-antialiased dark:nx-bg-primary-300/10 nx-text-[.9em] contrast-more:nx-border contrast-more:nx-border-primary-900/20 contrast-more:nx-contrast-150 contrast-more:dark:nx-border-primary-100/40 nx-py-4">Bad Prompt ❌: "Check this contract."<br><br>Quality Prompt ✅: "Analyze this employment contract for potential liability issues, focusing specifically on non-compete clauses, termination conditions, and compensation terms. Highlight any ambiguous language that could lead to legal disputes."</pre>
                     </div>
                     
                     <p class="nx-mt-6 nx-leading-7 first:nx-mt-0"><em><span class="notion-enable-hover" data-token-index="0">Example 2: Case Research</span></em></p>
-                    <div class="example-box">
-                        <pre class="nx-bg-primary-700/5 nx-mb-4 nx-overflow-x-auto nx-rounded-xl nx-subpixel-antialiased dark:nx-bg-primary-300/10 nx-text-[.9em] contrast-more:nx-border contrast-more:nx-border-primary-900/20 contrast-more:nx-contrast-150 contrast-more:dark:nx-border-primary-100/40 nx-py-4" data-language="text" data-theme="default">Bad Prompt ❌: "Find similar cases." 
-
-Quality Prompt ✅: "Identify relevant precedents for a case involving workplace discrimination based on remote work accommodation requests during COVID-19. Focus on ADA compliance and reasonable accommodation standards."</pre>
+                    <div class="nextra-code-block nx-relative nx-mt-6 first:nx-mt-0" style="margin: 20px 0; padding: 15px; background-color: #f5f5f5; border-radius: 4px;">
+                        <pre class="nx-bg-primary-700/5 nx-mb-4 nx-overflow-x-auto nx-rounded-xl nx-subpixel-antialiased dark:nx-bg-primary-300/10 nx-text-[.9em] contrast-more:nx-border contrast-more:nx-border-primary-900/20 contrast-more:nx-contrast-150 contrast-more:dark:nx-border-primary-100/40 nx-py-4">Bad Prompt ❌: "Find similar cases." <br><br>Quality Prompt ✅: "Identify relevant precedents for a case involving workplace discrimination based on remote work accommodation requests during COVID-19. Focus on ADA compliance and reasonable accommodation standards."</pre>
+                    </div>
+                    
+                    <div class="key-concepts">
+                        <h3>Key Concepts</h3>
+                        <ul>
+                            <li><strong>Zero-Shot Definition</strong>: Prompting without providing examples, relying on clear instructions</li>
+                            <li><strong>Specificity</strong>: Detailed instructions yield more precise outputs</li>
+                            <li><strong>Contextual Framing</strong>: Background information that helps AI understand the purpose</li>
+                            <li><strong>Formatting Guidance</strong>: Explicit instructions about how to structure responses</li>
+                            <li><strong>Constraints</strong>: Clear boundaries for what should and shouldn't be included</li>
+                        </ul>
                     </div>
                     
                     <div class="tips-section">
-                        <h3>Key Points to Remember</h3>
+                        <h3>Key Points to Remember About Zero-Shot Prompting</h3>
                         <ul>
-                            <li><strong>Specificity is crucial</strong> - Vague prompts lead to vague responses</li>
-                            <li><strong>Include context</strong> - Help the AI understand the situation and requirements</li>
-                            <li><strong>Define focus areas</strong> - Direct attention to the most important aspects</li>
-                            <li><strong>Set quality standards</strong> - Indicate what makes a good response for your purposes</li>
+                            <li><strong>Specificity matters</strong> - The more specific your instruction, the better the result</li>
+                            <li><strong>Include constraints</strong> - Set clear boundaries for what you want and don't want</li>
+                            <li><strong>Provide context</strong> - Help the AI understand the situation and purpose</li>
+                            <li><strong>Format guidance</strong> - Tell the AI how you want the information presented</li>
+                            <li><strong>Review and refine</strong> - If you don't get what you need, iterate on your prompt</li>
                         </ul>
                     </div>
                     
                     <div class="navigation-buttons">
-                        <a href="prompt-elements.html"><i class="fas fa-arrow-left"></i> Prompt Elements</a>
-                        <a href="one-shot-prompting.html">Next: One-Shot Prompting <i class="fas fa-arrow-right"></i></a>
+                        <a href="prompt-elements.html" class="nav-button prev"><i class="fas fa-arrow-left"></i> Prompt Elements</a>
+                        <a href="one-shot-prompting.html" class="nav-button next">Next: One-Shot Prompting <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
